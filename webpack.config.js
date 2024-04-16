@@ -14,7 +14,9 @@ module.exports = {
               './loaders/transitionCodeLoader.js'
             ),
             options: {
-              name: 'hah',
+              Scan: 'scanFace',
+              Add: 'addNumber',
+              CallName: 'callPhone',
             },
           },
         ],
@@ -24,5 +26,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'transitionCodeLoader',
+    libraryTarget: 'umd',
   },
 };
